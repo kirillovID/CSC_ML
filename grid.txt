@@ -1,0 +1,4 @@
+results = pd.concat([pd.DataFrame(grid.cv_results_["params"]),
+                     pd.DataFrame(grid.cv_results_["mean_test_score"], 
+                                  columns=["F1"])],axis=1)
+
